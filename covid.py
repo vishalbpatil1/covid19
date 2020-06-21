@@ -10,7 +10,7 @@ from statsmodels.tsa.arima_model import ARIMA
 st.title('Covid-19 Data Analysis In India')
 st.header('covid19 ')
 
-data2=pd.read_csv('data\\covid_19_india.csv')
+data2=pd.read_csv('data/covid_19_india.csv')
 states=data2['State/UnionTerritory'].unique()
 s=st.selectbox('select state',states.tolist())
 data_all=data2[['State/UnionTerritory','Date','Cured','Confirmed','Deaths']]
