@@ -13,10 +13,10 @@ from statsmodels.tsa.arima_model import ARIMA
 # Title
 st.title('Coronavirus (COVID-19) statistics')
 st.header('The COVID-19 pandemic in India is part of the worldwide pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first case of COVID-19 in India, which originated from China, was reported on 30 January 2020. India currently has the largest number of confirmed cases in Asia, and has the third highest number of confirmed cases in the world after the United States and Brazil with the number of total confirmed cases breaching the 100,000 mark on 19 May, 200,000 on 3 June. 1,000,000 confirmed cases on 17 July 2020.')
-covid_img= Image.open('data\\img.png')
+covid_img= Image.open('data//img.png')
 st.image(covid_img)
-data2=pd.read_csv('data\\covid_19_india.csv')
-data_state=pd.read_csv('data\\StatewiseTestingDetails.csv')
+data2=pd.read_csv('data//covid_19_india.csv')
+data_state=pd.read_csv('data//StatewiseTestingDetails.csv')
 data_state=data_state.fillna(0)
 data_state['State'].unique().tolist()
 
